@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YLTA Style | Tênis Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#05070d;color:#fff}
+    a{text-decoration:none;color:inherit}
+
+    :root{
+      --blue:#1ec9ff;
+      --gold:#d4af37;
+      --dark:#020617;
+    }
+
+    /* NAVBAR */
+    nav{
+      position:fixed;
+      top:0;left:0;width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      background:rgba(2,6,23,.85);
+      backdrop-filter:blur(8px);
+      z-index:1000;
+    }
+    nav h1{font-size:1.8rem;font-weight:700}
+    nav h1 span{color:var(--gold)}
+    nav ul{list-style:none;display:flex;gap:30px}
+    nav ul li a{font-weight:500;transition:.3s}
+    nav ul li a:hover{color:var(--gold)}
+
+    /* HERO */
+    header{
+      height:100vh;
+      background:
+        linear-gradient(rgba(2,6,23,.85),rgba(2,6,23,.9)),
+        url('https://images.unsplash.com/photo-1542291026-7eec264c27ff');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:0 10%;
+    }
+    header h2{font-size:4rem;font-weight:700;max-width:600px}
+    header h2 span{color:var(--gold)}
+    header p{max-width:500px;margin:25px 0;color:#cbd5e1}
+    header a{
+      width:fit-content;
+      background:linear-gradient(135deg,var(--gold),#f5d76e);
+      color:#020617;
+      padding:15px 45px;
+      border-radius:40px;
+      font-weight:600;
+      transition:.3s;
+    }
+    header a:hover{transform:scale(1.05)}
+
+    section{padding:100px 10%}
+
+    .section-title{text-align:center;margin-bottom:70px}
+    .section-title h2{font-size:3rem}
+    .section-title span{color:var(--gold)}
+
+    /* PRODUCTS */
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:35px;
+    }
+    .product{
+      background:var(--dark);
+      border-radius:25px;
+      padding:25px;
+      box-shadow:0 15px 40px rgba(0,0,0,.6);
+      transition:.4s;
+    }
+    .product:hover{transform:translateY(-12px)}
+    .product img{width:100%;border-radius:20px}
+    .product h3{margin:15px 0;font-size:1.3rem}
+    .product a{
+      display:inline-block;
+      margin-top:10px;
+      padding:12px 30px;
+      background:linear-gradient(135deg,var(--blue),var(--gold));
+      color:#020617;
+      border-radius:30px;
+      font-weight:600;
+    }
+
+    /* ABOUT */
+    .about{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      color:#cbd5e1;
+      font-size:1.15rem;
+    }
+
+    footer{
+      background:#020617;
+      text-align:center;
+      padding:35px;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+      header h2{font-size:2.6rem}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>YLTA <span>STYLE</span></h1>
+  <ul>
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#tenis">Tênis</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="https://chat.whatsapp.com/DP3bP96o5EO9gSerCSmnv2" target="_blank">WhatsApp</a></li>
+  </ul>
+</nav>
+
+<header id="inicio">
+  <h2>Estilo que Impõe <span>Presença</span></h2>
+  <p>Tênis urbanos premium com identidade forte, visual luxuoso e atitude de quem anda à frente.</p>
+  <a href="https://chat.whatsapp.com/DP3bP96o5EO9gSerCSmnv2" target="_blank">Entrar no Grupo Exclusivo</a>
+</header>
+
+<section id="tenis">
+  <div class="section-title">
+    <h2>Nossos <span>Modelos</span></h2>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" alt="Tênis YLTA">
+      <h3>YLTA</h3>
+      <a href="https://chat.whatsapp.com/DP3bP96o5EO9gSerCSmnv2" target="_blank">Ver no WhatsApp</a>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Tênis YLTA">
+      <h3>YLTA</h3>
+      <a href="https://chat.whatsapp.com/DP3bP96o5EO9gSerCSmnv2" target="_blank">Ver no WhatsApp</a>
+    </div>
+    <div class="product">
+      <img src="img/the-dk-photography-NUoPWImmjCU-unsplash.jpg" alt="Tênis YLTA">
+      <h3>YLTA</h3>
+      <a href="https://chat.whatsapp.com/DP3bP96o5EO9gSerCSmnv2" target="_blank">Ver no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="section-title">
+    <h2>Sobre a <span>YLTA</span></h2>
+  </div>
+  <div class="about">
+    A YLTA Style é uma marca focada em tênis de impacto visual, luxo urbano e identidade forte. Inspirada nas gigantes do mercado, criamos presença, não apenas calçados.
+    <br><br>
+    Este site é exclusivamente para divulgação. Para lançamentos, novidades e acesso antecipado, participe do nosso grupo oficial no WhatsApp.
+  </div>
+</section>
+
+<footer>
+  © 2026 YLTA Style — Calçados em Geral | Divulgação Oficial
+</footer>
+
+</body>
+</html>
